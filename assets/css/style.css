@@ -75,6 +75,10 @@ main h1{
 .image div h3{
     color:blue;
 }
+.image div img{
+    width: 330px;
+    height: 330px;
+}
 /* image section end */
 
 /* about section start */
@@ -132,3 +136,60 @@ footer h4{
 }
 
 /* footer section end */
+
+/* media query section start */
+
+@media screen and (max-width:992px){
+    header{
+        padding: 0px;
+    }
+    .banner{
+        padding:0px 20px;
+    }
+    .image{
+        padding: 0px;
+    }
+    .details{
+        padding: 0px;
+    }
+    section table img{
+        width: 400px;
+        height: 300px;
+    }
+
+
+}
+@media  screen and (max-width:768px) {
+    header{
+        height: auto;
+    }
+   .image{
+    width: 100px;
+    padding: 0px 0px;
+    justify-content: left;
+   }
+    .image div img{
+        width: 200px;
+        height: 200px;
+        
+        
+    }
+    .image div p{
+       
+        font-size: 15px;
+        width: 30px;
+    }
+
+    
+}
+@media screen and (max-width:576px) {
+    .image{
+        flex-direction: column;
+        padding-left: 200px;
+    }
+    table tr td{
+        flex-direction: column;
+    }
+}
+
+/* media query section end */
